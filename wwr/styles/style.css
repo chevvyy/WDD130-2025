@@ -5,12 +5,25 @@
     background-color: #f5f5dc;
 }
 
+.card-img {
+    border: 10px solid #d9c2a3;
+    border-radius: 5px;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
 #hero-img   {
     min-width: 100%;
     max-width: 100%;
     z-index: 1;
     margin-top: 54px;
     margin-bottom: -15%;
+}
+
+#logo_link  {
+    padding-top: 5px;
 }
 
 #hero-box   {
@@ -20,6 +33,7 @@
 #hero-msg   {
     z-index: 10;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-top: black 2px solid; 
     background-color: #f5f5dc;
 }
@@ -51,7 +65,7 @@ body    {
     margin-right: 15%;
     text-align: center;
     background-color: #f5f5dc;
-    font-family: 'roboto condensed';
+    font-family: 'Lexend Giga', 'Roboto Condensed';
 }
 
 nav a   {
@@ -85,6 +99,8 @@ main section    {
     background-color: #f5f5dc;
     text-decoration: none;
     color: #404E4D;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover    {
@@ -94,6 +110,11 @@ main section    {
 
 .msg    {
     background-color: #f5f5dc;
+    padding: 35px;
+}
+
+.msg p  {
+    padding-bottom: 15px;
 }
 
 .msg h2 {
@@ -107,6 +128,7 @@ main section    {
 footer {
     background-color: #f5f5dc;
     color: #404E4D;
+    padding: 25px 50px;
 }
 
 footer a   {
@@ -117,6 +139,10 @@ footer a   {
 
 footer p    {
     font-size: 1.2em;
+}
+
+footer .social img  {
+    padding-top: 15px;
 }
 
 footer p:hover  {
@@ -139,4 +165,5 @@ h4  {
 
 .icon   {
     width: 80px;
+    padding-top: 10px;
 }
