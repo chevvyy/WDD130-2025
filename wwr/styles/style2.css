@@ -1,0 +1,16 @@
+.grid1{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-items: center;
+    align-items: center;
+   
+   }
+   .logoo {
+       grid-column: 1/2;
+       width: 100%;
+   }
+   .h11 {
+       width: 100%;
+       grid-column: 2/3;
+   
+   }
