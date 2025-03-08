@@ -249,6 +249,135 @@ h4  {
     transform: scale(1.1);
 }
 
+/*Page 2 or Rates site*/
+.pricing-grid{
+    display: grid;
+    margin-top: 20%;
+    margin-bottom: 7%;
+    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+    grid-template-rows: 3em 3em 3em;
+    grid-template-areas:". pricing . . ."
+    ". . and . ."
+    ". . . rates .";
+}
+
+.pricing{
+    grid-area: pricing;
+    text-align: right;
+    font-size: 4em;
+}
+
+.and{
+    grid-area: and;
+    text-align: center;
+    font-size: 4em;
+}
+
+.rates{
+    grid-area: rates;
+    font-size: 4em;
+}
+
+.pg{
+    display: grid;
+    padding-top: 10%;
+    padding-bottom: 25%;
+    margin-bottom: 25%;
+    grid-template-columns: repeat(7, 2fr);
+    grid-gap: 15%;
+    grid-template-areas: "left1 left1 left1 left1 left1 left1 . "
+    " . right1 right1 right1 right1 right1 right1"
+    "left2 left2 left2 left2 left2 left2 . "
+    " . right2 right2 right2 right2 right2 right2";
+}
+
+.left1{
+    grid-area: left1;
+    display: grid;
+    grid-template-columns: 3fr 1fr 4fr;
+    padding-right: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.left2{
+    grid-area: left2;
+    display: grid;
+    grid-template-columns: 3fr 1fr 4fr;
+    padding-right: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.right1{
+    grid-area: right1;
+    display: grid;
+    grid-template-columns: 4fr 1fr 3fr;
+    padding-left: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.right2{
+    grid-area: right2;
+    display: grid;
+    grid-template-columns: 4fr 1fr 3fr;
+    padding-left: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.left1 img, .left2 img{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+    width: 100%;
+    max-height: 100%;
+    box-shadow: 5px 5px 5px rgb(81, 81, 81);
+}
+
+.left1 p, .left2 p{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgb(170, 170, 129);
+    box-shadow: 5px 5px 5px rgb(81, 81, 81);
+}
+
+.right1 img, .right2 img{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    z-index: 1;
+    width: 100%;
+    max-height: 100%;
+    box-shadow: 5px 5px 5px rgb(149, 149, 149);
+}
+
+.right1 p, .right2 p{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgb(170, 170, 129);
+    box-shadow: 5px 5px 5px rgb(81, 81, 81);
+}
+
+
 
 
 .social a img   {
