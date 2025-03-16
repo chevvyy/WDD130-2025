@@ -98,6 +98,7 @@ nav a   {
 
 nav a:hover    {
     background-color: #78C0E0;
+    border-radius: 25px;
     color: black;
 }
 
@@ -157,28 +158,55 @@ footer {
     border-radius: 25px;
 }
 
-footer a   {
-    background-color: #f5f5dc;
+footer a    {
     color: #404E4D;
     text-decoration: none;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    width: 170px;
+    height: 50px;
+    justify-items: top;
+}
+
+.social a   {
+    color: #404E4D;
+    text-decoration: none;
+    width: 100%;
+    min-height: fit-content;
+    grid-row: 1/2;
+    max-height: 50px;
+    justify-items: center;
+}
+
+.social img {
+    border-radius: 10px;
+}
+
+.social a:hover {
+    background-color:#d9c2a3;
+}
+
+footer a:hover  {
+    background-color: #78C0E0;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+
 }
 
 footer p    {
     font-size: 1.2em;
 }
 
-footer .social img  {
-    padding-top: 15px;
-}
-
-footer p:hover  {
-    text-decoration: underline;
-}
-
-footer a:hover  {
-    background-color: #78C0E0;
-    color: black;
-
+footer p a{
+    padding: 10px;
 }
 
 .home-title {
@@ -252,7 +280,7 @@ h4  {
 /*Page 2 or Rates site*/
 .pricing-grid{
     display: grid;
-    margin-top: 20%;
+    padding-top: 20%;
     margin-bottom: 7%;
     grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
     grid-template-rows: 3em 3em 3em;
