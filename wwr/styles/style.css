@@ -407,6 +407,29 @@ h4  {
     box-shadow: 5px 5px 5px rgb(81, 81, 81);
 }
 
+#feedback {
+    background-color: antiquewhite;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 300px;
+}
+
+.form1  {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+}
+
 
 
 
